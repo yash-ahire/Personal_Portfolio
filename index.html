@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/icon.png" alt="Yash Ahire" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yash Ahire">Yash Ahire</h1>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:yashahire@iitgn.ac.in" class="contact-link">yashahire.iitgn.ac.in</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917219193716" class="contact-link">+91 72191 93716</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-10-11">October 11, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gandhinagar, Gujarat, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/yash-ahire/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>   <!-- to be changed to linkedIn -->
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/yash.ahire_/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a B.Tech Junior Undergraduate at IIT Gandhinagar, pursuing Mechanical Engineering with a minor in Management.
+            I am passionate about Data Analysis, Graphic design, Web design, Entrepreneurship, Leadership and Management.
+            I enjoy meeting new people and hearing new perspectives, and I am always enthusiastic about trying out new initiatives
+            and working in unconventional ways.
+          </p>
+
+          <p>
+            Throughout my academic journey, I have actively taken up numerous positions of responsibility to contribute to the college community.
+            These roles include serving as a Class Representative, Coordinator for Event Management and Design Team at Amalthea
+            (IIT Gandhinagar's annual tech summit), Secretary of Vinteo (the Filmmaking club of IIT GN), Student Representative at the Media
+            and Communications committee (IIT Gandhinagar) and Coordinator for Class Representatives and Course Feedback.
+          </p>
+
+          <p>
+            After my 10th school, I started my first educational startup (Quarksolutions). I designed and implemented an online platform to
+            deliver mock tests, enabling students to practice and assess their knowledge and skills in a simulated exam environment.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/DataAnalytics.png
+                " alt="da icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analytics</h4>
+
+                <p class="service-item-text">
+                  From raw data to actionable insights, my data analytics expertise ensures a high-quality approach to extracting meaningful information.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/web-design.png" alt="WebDes Icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Design & Graphic Design</h4>
+
+                <p class="service-item-text">
+                  With a passion for design, I create visually appealing and efficient web designs, setting a professional standard in the digital space.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/VideoEditing.png" alt="video icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Editing</h4>
+
+                <p class="service-item-text">
+                  From seamless transitions to captivating effects, my video editing skills guarantee a professional
+                  finish, delivering visually compelling content.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/management.png" alt="mng icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Management</h4>
+
+                <p class="service-item-text">
+                  Strategic management that elevate business performance to new heights, executed with a professional touch.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="Nikharv Shah" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nikharv Shah</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Without a doubt, Yash Ahire stands out as the epitome of reliability and diligence among all the individuals I know.
+                    When it comes to getting things done, Yash is the person I would unequivocally recommend. His work ethic is not only
+                    commendable but also inspiring, showcasing a level of dedication that is truly unparalleled. Beyond his professional
+                    prowess, what sets Yash apart is his remarkable down-to-earth nature. In a world where humility is often overshadowed,
+                    Yash remains refreshingly grounded. It is a privilege to vouch for Yash Ahire who is an excellent well-rounded person and
+                    as an exceptional leader.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar.png" alt="Rudra Vengurlekar" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rudra Vengurlekar</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Yash is a brilliant and creative designer who has a passion for his work. He is always ready to try new things and adapt
+                    to different situations. He has a knack for creating designs that convey the message and the emotion of the project.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/my-avatar.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2023-12-30">30 December, 2023</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Indian Institute of Technology, Gandhinagar</h4>
+
+              <span>2021 — Present</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mahatma Gandhi Vidyamandir's Loknete Vyankatrao Hiray Arts, Science & Commerce, Nashik, Maharashtra</h4>
+
+              <span>2018 — 2020</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Shining Star Academy, Nashik, Maharashtra</h4>
+
+              <span>2016 — 2018</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Position of Responsibilities</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Founder Educational Startup - Quarksolutions </h4>
+
+              <span>2018 — Present</span>
+
+              <p class="timeline-text">
+               Designed and implemented an online platform to deliver mock tests, enabling students to practice and assess their knowledge and skills in a simulated exam environment.
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Student Representative, Media and Communications Committee (IIT Gandhinagar)</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                I actively engage with fellow students to gather feedback, convey important information, and contribute to the committee's initiatives, fostering effective communication and collaboration within the academic community.
+            
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Coordinator for Class Representatives and Course Feedback (IIT Gandhinagar)</h4>
+
+              <span>2023 — Present </span>
+
+              <p class="timeline-text">
+                Managing a team of class representatives, overseeing their activities and ensuring effective communication between students and faculty.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Club Secretary (Vinteo- Film making Club of IIT Gandhinagar) </h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+               Organized workshops, film screenings, and competitions, ensuring timely execution and effective communication with club members. Managed the club's budget, securing funding for equipment, props, and post-production needs.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Coordinator for Events Management and Design Team (Amalthea-Annual Tech Summit of IIT Gandhinagar) </h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+              Oversaw the planning, organization, and execution of the entire event, ensuring smooth operations and timely delivery.  Managed a team of designers, assigning tasks, providing guidance, and ensuring timely delivery of design projects.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Design Team Executive (Blithchron-Annual Cultural Festival of IIT Gandhinagar) </h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+              Collaborated with the organizing committee to develop the visual identity and branding guidelines for Blithchron, ensuring a consistent and appealing aesthetic across all promotional materials.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Google Project Management: by Google on Coursera</h4>
+
+              <span>Certificate earned on December 26, 2023</span>
+
+              <p class="timeline-text">
+                Foundations of Project Management, Project Initiation: Starting a Successful Project, Project
+                Planning: Putting It All Together, Project Execution: Running the Project, Agile Project
+                Management, Capstone: Applying Project Management in the Real World
+              </p>
+
+            </li>
+            
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Strategic Leadership and Management: by University of Illinois at Urbana-Champaign on Coursera</h4>
+
+              <span>Certificate earned at August 3, 2023</span>
+
+              <p class="timeline-text">
+                Leading Teams: Developing as a Leader, Designing the Organization, Leading
+                Teams: Building Effective Team Cultures, Managing the Organization, Corporate
+                Strategy, Strategic Leadership and Management Capstone
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Anaytics</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Leadership and Team Management</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Leadership and Team Management</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Budget Management</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PROJECTS
+      -->
+
+      <article class="projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+          </div>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+  
+              <h3 class="h3">Data Analysis</h3>
+            </div>
+  
+            <ol class="timeline-list">
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Analysis of Restaurant Tips (Advisor- Prof. Marcos Severo)</h4>
+  
+                <span>[Aug '23 - Sept '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Conducted a detailed analysis of restaurant tips to uncover valuable insights. Utilized powerful software tools like Power BI, Gretl, and Tableau to analyze data effectively. Examined factors influencing tip amounts.</li>
+                  <li>Employed statistical techniques in Gretl to identify correlations and trends in tip data. Improved decision-making for restaurant management by providing data-driven insights.</li>
+                </ol>
+  
+              </li>
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Analysis of dataset on hosts of Airbnb company (Advisor- Prof. Marcos Severo)</h4>
+  
+                <span>[Sept '23 - Oct '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Analyzed a dataset of approximately 400 Airbnb hosts. Conducted exploratory data analysis to identify key patterns and trends. Utilized powerful software tools like Power BI, Gretl, and Tableau to analyze data effectively.</li>
+                  <li>Identified significant correlations between host characteristics and listing performance. Employed statistical techniques in Gretl to identify correlations and trends in tip data.</li>
+                </ol>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Analysis of Multilingualism in Different Cities of India (Advisor- Prof. Jooyoung Kim)</h4>
+  
+                <span>[March '23 - April '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Utilized data gathered from surveys conducted in diverse areas to analyze the distribution of languages in each region.</li>
+                  <li>Employed statistical analysis data visualization techniques and Led a team of 5 members to ensure timely completion.</li>
+                </ol>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Analysis of Chocolate Dataset (Advisor- Prof. Marcos Severo)</h4>
+  
+                <span>[Oct '23 - Nov '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Conducted comprehensive analysis of a chocolate dataset, employing advanced data analytics techniques such as correlation analysis, hypothesis testing, modeling, and descriptive statistics.</li>
+                  <li>Developed and implemented statistical models to identify patterns and relationships within the chocolate dataset, enhancing predictive capabilities.</li>
+                </ol>
+  
+              </li>
+  
+            </ol>
+  
+          </section>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+  
+              <h3 class="h3">Web Design</h3>
+            </div>
+  
+            <ol class="timeline-list">
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Development of Website design for Amalthea, Tech Summit of IITGN</h4>
+  
+                <span>[Sept '23 - Jan '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Worked on researching websites and planned color schemes, fonts, and visual elements for the website and worked closely with the development team to implement the website design in HTML and CSS.</li>
+                  <li>Collaborated closely with the technical team and marketing team to understand specific requirements and incorporated modern and user-friendly interfaces to enhance the overall user experience.</li>
+                </ol>
+  
+              </li>
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Development of Website design for Academic Council, IIT Gandhinagar</h4>
+  
+                <span>[Sept '23 - Dec '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Collaborated with cross-functional teams to gather requirements, ensuring alignment with the council's goals and objectives. Implemented responsive design principles to optimize the website for various devices, improving overall accessibility.</li>
+                </ol>
+  
+              </li>
+  
+            </ol>
+  
+          </section>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+  
+              <h3 class="h3">Mechanical Engineering</h3>
+            </div>
+  
+            <ol class="timeline-list">
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Automated Drainage Cleaning System (Advisor- Prof. Udit Bhatia)</h4>
+  
+                <span>[Jan '22 - Apr '22]</span>
+
+                <ol class="timeline-text">
+                  <li>Identified and addressed the real-life problem of drainage clogging with a team of 20 members, focusing on developing an automated solution to improve efficiency and effectiveness.</li>
+                  <li>Brainstormed multiple existing solutions, implemented plans to understand the challenges and requirements for efficient maintenance, and created unique frameworks.</li>
+                </ol>
+  
+              </li>
+  
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Utility Bench - Adjust to your comfort (Advisor- Prof. Madhu Vadali)</h4>
+  
+                <span>[Oct '22 - Apr '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Worked on brief research to understand user needs and Led a team of 8 members with planning and timely execution of the project. Regularly provided progress updates and maintained open communication channels between teams.</li>
+                  <li>Conceptualized and designed a versatile table with an adjustable angle and height adjustment, understanding user problems and allowing them to customize their working or studying positions for optimal comfort.</li>
+                </ol>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Comparative Analysis of Truss Bridges under Transverse Loading (Advisor- Prof. Manish Kumar)</h4>
+  
+                <span>[Jan '23 - March '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Designed and constructed Truss Bridges and conducted statistical analysis and data interpretation to identify differences.</li>
+                  <li>Computed and analyzed data related to bridge deflection, stress distribution, failure modes to evaluate performance.</li>
+                  <li>Presented the Analysis project to faculty, sharing insights. Applied engineering principles, material science knowledge.</li>
+                </ol>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Compact Gadget Cleaner (Advisor- Prof. Manasi Kanetkar)</h4>
+  
+                <span>[Nov '22 - Dec '22]</span>
+
+                <ol class="timeline-text">
+                  <li>Researched the challenges of electronic cleaning gadgets and designed a tool that can reach corners of the device, reach the narrow edges of keyboard, and clean flat screens. Included fine stainless tip, micro brush, soft cotton swab.</li>
+                  <li>Collaborated with individuals and technicians to gather feedback and refine the design based on their needs.</li>
+                </ol>
+  
+              </li>
+
+              <li class="timeline-item">
+  
+                <h4 class="h4 timeline-item-title">Computational Fluid Dynamics (Under Prof. Jaichander)</h4>
+  
+                <span>[Jan '23 - Apr '23]</span>
+
+                <ol class="timeline-text">
+                  <li>Utilized specialized software ANSYS Fluent to simulate and analyze fluid behavior, including flow patterns, heat transfer, and pressure distribution.</li>
+                  <li>Developed skills in computational modeling, simulation, data interpretation, and critical thinking while working on the Computational Fluid Dynamics project.</li>
+                </ol>
+  
+              </li>
+  
+            </ol>
+  
+          </section>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
